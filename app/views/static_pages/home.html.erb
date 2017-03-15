@@ -1,3 +1,8 @@
 <% provide(:title, "Home") %>
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+
+<section class="sign-up jumbotron">
+	<div class="container">
+		<h1>Sign up to see more details!</h1>
+		<%= link_to "Sign up now!", signup_path, class: "btn btn-primary" %>
+	</div>
+</section>

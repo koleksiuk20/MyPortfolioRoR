@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "variables.scss";
+@import "mixins.scss";
 
 // Top separator
 .top-separator {
@@ -10,4 +11,34 @@
 // White background
 .alt-bg {
   background: $alternate-bg;
+}
+
+// Buttons
+.btn {
+  @include upper;
+  font-weight: 700;
+  padding: 12px 20px;
+  font-size: 14px;
+  line-height: 1.4;
+  &:focus {
+    outline: none !important;
+  }
+  i {
+    @include icon($bright-text-color, 22px, 22px);
+    margin-right: 10px;
+    @include v-align;
+  }
+  span {
+    @include v-align;
+  }
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #8dd4d4;
+	border-color: #7acdcd;
+	&:hover {
+		background-color: #68c6c6;
+		border-color: #4ebcbc;
+	}
 }
