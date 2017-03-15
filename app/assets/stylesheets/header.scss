@@ -47,7 +47,6 @@
   @include upper;
   @include basic-transition;
   &:hover {
-    @include list-style-none;
     color: $menu-text-hover-color;
     text-decoration: none;
   }
