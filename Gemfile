@@ -52,6 +52,7 @@ group :development do
 end
 
 group :test do
+  gem 'rails-controller-testing'
   gem 'minitest-reporters', '1.1.9'
 end
 

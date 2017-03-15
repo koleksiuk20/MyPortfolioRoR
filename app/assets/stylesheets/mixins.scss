@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "home.scss";
 
 // Alignment and Positioning
 @mixin relative {
@@ -20,6 +21,13 @@
   border-width: $width;
   border-style: $style;
   border-color: $color;
+}
+
+// Box sizing
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 // Capital Letters
