@@ -1,0 +1,57 @@
+@import "variables.scss";
+
+// Alignment and Positioning
+@mixin relative {
+  position: relative;
+}
+
+@mixin v-align {
+  vertical-align: middle;
+}
+
+@mixin v-align-transform {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// Borders
+@mixin basic-border($width, $style, $color:$border-color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+// Capital Letters
+@mixin upper {
+  text-transform: uppercase;
+}
+
+// Icons
+@mixin icon($color, $font-size, $line-height:$line-height-base) {
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+// Lists
+@mixin list-style-none {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+// Padding
+@mixin padding-top-bottom($p-top, $p-bottom) {
+  padding: $p-top 0 $p-bottom;
+}
+
+// Shadow
+@mixin shadow($properties) {
+  box-shadow: $properties;
+}
+
+// Transitions
+@mixin basic-transition {
+  transition: all 0.2s ease-in-out;
+}

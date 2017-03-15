@@ -1,0 +1,70 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+// Main header
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $alternate-bg;
+  z-index: 99;
+  @include shadow(0 0 3px 0 rgba(0,0,0,0.2));
+}
+
+// Styles for 60px
+.header-short, .header-short .header-content, .header-short .main-logo, .header-short .nav-main, .header-short .nav-right {
+  height: $header-height-sm;
+}
+
+// Logo styles
+.logo-wrapper {
+  display: table;
+  .main-logo {
+    display: table-cell;
+    @include v-align;
+    img {
+      height: 50px;
+    }
+  }
+}
+
+// General main menu styles
+.header-content {
+  ul {
+    @include list-style-none;
+    li {
+      float: left;
+    }
+  }
+}
+
+.menu-item {
+  padding: 0 18px;
+  font-weight: 700;
+  color: $menu-text-color;
+  text-decoration: none;
+  @include upper;
+  @include basic-transition;
+  &:hover {
+    @include list-style-none;
+    color: $menu-text-hover-color;
+    text-decoration: none;
+  }
+}
+
+// Main Menu
+.nav-main {
+  ul {
+    overflow: hidden;
+    @include v-align-transform;
+    li {
+      float: left;
+      line-height: 1.4;
+    }
+  }
+}
+
+.menu-link-active {
+  color: $menu-text-hover-color !important;
+}

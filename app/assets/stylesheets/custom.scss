@@ -1,0 +1,13 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "variables.scss";
+
+// Top separator
+.top-separator {
+  height: 60px;
+}
+
+// White background
+.alt-bg {
+  background: $alternate-bg;
+}
