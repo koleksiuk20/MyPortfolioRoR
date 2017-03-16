@@ -4,6 +4,18 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+// Main content
+#main-content {
+  @include relative;
+  background: $body-bg;
+  z-index: 1;
+}
+
+// Jumbotron
+.jumbotron {
+  margin-bottom: 0;
+}
+
 // Top separator
 .top-separator {
   height: 60px;

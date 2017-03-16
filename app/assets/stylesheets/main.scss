@@ -1,0 +1,232 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+// About
+.about {
+  .container {
+    .row:first-child {
+      margin-top: 10px;
+      @media screen and (min-width: 768px) {
+        margin-top: 30px;
+      }
+      @media screen and (min-width: 992px) {
+        margin-top: 50px;
+      }
+    }
+  }
+  font-family: $font-family-sans-serif;
+  .main-box, h4, span {
+    @include upper;
+    font-weight: bold;
+  }
+  h3, h4 {
+    border-bottom: 1px dotted #d7d8d6;
+  }
+}
+
+.main-box {
+  padding: 20px;
+  h3 {
+    margin: 0 0 10px 0;
+    font-size: 38px;
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
+  }
+  p {
+    color: #999999;
+    font-size: 24px;
+    font-weight: normal;
+    text-shadow: none;
+    letter-spacing: normal;
+  }
+}
+
+.box {
+  @include relative;
+  width: 100%;
+  margin: 0 7px 20px 0;
+  @media screen and (min-width: 768px) {
+    margin: 0 7px 50px 0;
+  }
+  padding: 20px;
+  float: left;
+  @include icon-image(url('corner-dot.png'));
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #d7d8d6;
+  -webkit-box-shadow: 2px 2px 2px 2px #d7d8d6;
+  -moz-box-shadow: 2px 2px 2px 2px #d7d8d6;
+}
+
+.icon {
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  display: block;
+  width: 25px;
+  height: 26px;
+}
+
+#personal-details-icon {
+  @include icon-image(url('personal-details-icon.png'));
+}
+
+.education-icon {
+  @include icon-image(url('education-icon.png'));
+}
+
+.work-icon {
+  @include icon-image(url('work-icon.png'));
+}
+
+.skills-icon {
+  @include icon-image(url('skills-icon.png'));
+}
+
+.about-section-title {
+  margin: 0 0 15px 35px;
+  font-size: 28px;
+}
+
+.about-section-list {
+  list-style: none;
+  li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    span {
+      display: block;
+      width: 100%;
+      padding-right: 10px;
+      float: left;
+      color: #555554;
+      font-weight: bold;
+    }
+    span.work-title {
+      padding-bottom: 10px;
+    }
+    p {
+      width: 100%;
+      float: left;
+    }
+  }
+}
+
+.personal-details {
+  span {
+    width: 100px !important;
+  }
+  p {
+    width: 100px !important;
+    margin-bottom: 0;
+  }
+}
+
+.education-list {
+  li {
+    padding-left: 0;
+  }
+}
+
+.work-details-list {
+  -moz-padding-start: 0;
+  -webkit-padding-start: 0;
+}
+
+.progress {
+  @include relative;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  margin: 0 15px 0 0;
+  padding: 0;
+  list-style: none;
+  @include v-align;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #ff0000; /* Old browsers */
+  background: -moz-linear-gradient(left, #ff0000 0%, #ffff00 50%, #ffff00 51%, #00ff00 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ff0000 0%,#ffff00 50%,#ffff00 51%,#00ff00 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ff0000 0%,#ffff00 50%,#ffff00 51%,#00ff00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // @media screen and (min-width: 992px) { // Commented due to missing javascript code so progress bar is always displayed
+  //   visibility: hidden;
+  // }
+}
+
+.progress-bar:after {
+  content: '';
+  display: block;
+  height: 20px;
+  float: right;
+  background: #f6f6f6;
+}
+
+#progress-software.progress-bar:after {
+  width: 5%;
+}
+
+#progress-mobile.progress-bar:after {
+  width: 5%;
+}
+
+#progress-automation.progress-bar:after {
+  width: 40%;
+}
+
+#progress-selenium.progress-bar:after {
+  width: 40%;
+}
+
+#progress-cucumber.progress-bar:after {
+  width: 40%;
+}
+
+#progress-html-css.progress-bar:after {
+  width: 15%;
+}
+
+#progress-sass-less.progress-bar:after {
+  width: 20%;
+}
+
+#progress-js.progress-bar:after {
+  width: 30%;
+}
+
+#progress-jquery.progress-bar:after {
+  width: 30%;
+}
+
+#progress-ajax.progress-bar:after {
+  width: 50%;
+}
+
+#progress-gulp.progress-bar:after {
+  width: 20%;
+}
+
+#progress-webpack.progress-bar:after {
+  width: 10%;
+}
+
+#progress-php.progress-bar:after {
+  width: 60%;
+}
+
+.progress-bar-value {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 30px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: #555554;
+  z-index: 100;
+  // @media screen and (min-width: 992px) { // Commented due to missing javascript code so progress bar is always displayed
+  //   visibility: hidden;
+  // }
+}

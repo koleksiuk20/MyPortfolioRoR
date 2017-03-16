@@ -88,6 +88,12 @@
   background-position: center center;
 }
 
+// About section images
+@mixin icon-image($url) {
+  background-image: $url;
+  background-repeat: no-repeat;
+}
+
 // Slider Overlay
 @mixin dark-overlay {
   content: "";
