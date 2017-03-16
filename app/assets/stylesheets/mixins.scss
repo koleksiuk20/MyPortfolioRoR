@@ -12,7 +12,7 @@
 
 @mixin v-align-transform {
   position: relative;
-  top: 50%;
+  top: 20px;
   transform: translateY(-50%);
 }
 

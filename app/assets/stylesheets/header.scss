@@ -33,33 +33,32 @@
 .header-content {
   ul {
     @include list-style-none;
-    li {
+    li, div {
       float: left;
+      a {
+        font-weight: 700;
+        color: $menu-text-color;
+        text-decoration: none;
+        @include upper;
+        @include basic-transition;
+        &:hover {
+          color: $menu-text-hover-color;
+        }
+      }
     }
-  }
-}
-
-.menu-item {
-  padding: 0 18px;
-  font-weight: 700;
-  color: $menu-text-color;
-  text-decoration: none;
-  @include upper;
-  @include basic-transition;
-  &:hover {
-    color: $menu-text-hover-color;
-    text-decoration: none;
   }
 }
 
 // Main Menu
 .nav-main {
-  ul {
-    overflow: hidden;
+  ul.main-nav-list {
     @include v-align-transform;
-    li {
+    li, div {
       float: left;
       line-height: 1.4;
+      a {
+        padding: 0 18px;
+      }
     }
   }
 }
