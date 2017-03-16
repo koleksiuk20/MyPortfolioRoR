@@ -10,6 +10,7 @@
 
   <body>
   	<%= render 'layouts/header' %>
+    <%= render 'layouts/slider' %>
 		<div class="container">
       <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "flash-alert alert alert-#{message_type}") %>

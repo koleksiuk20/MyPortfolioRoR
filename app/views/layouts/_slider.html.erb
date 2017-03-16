@@ -1,0 +1,56 @@
+<section class="top-slider hidden-xs" id="slider">
+  <div id="top-slider" class="carousel slide" data-ride="carousel">
+
+    <!-- Top slider content -->
+    <div class="carousel-inner" role="listbox">
+
+      <!-- First slider -->
+      <div class="item active">
+        <%= image_tag "slider_images/slider1.png", class: "slide-image" %>
+        <div class="container">
+          <div class="item-content">
+            <h1>Hello, I am Kamil</h1>
+            <h3>I am an awesome Web Developer who has creative visions, many ideas and can bring your concepts to life.</h3>
+            <a class="btn btn-primary page-scroll" href="#">
+              <i class="fa fa-chevron-down" href="#"></i>
+              <span href="#about">See more</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second slider -->
+      <div class="item">
+        <%= image_tag "slider_images/slider2.png", class: "slide-image" %>
+        <div class="container">
+          <div class="item-content">
+            <h1>Portfolio</h1>
+            <h3>Check out my beautiful websites and get inspired.</h3>
+            <a class="btn btn-primary page-scroll" href="#">
+              <i class="fa fa-chevron-down" href="#"></i>
+              <span href="#portfolio">See more</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slider controls -->
+    <a class="left carousel-control" href="#top-slider" role="button" data-slide="prev">
+      <i class="fa fa-chevron-left"></i>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#top-slider" role="button" data-slide="next">
+      <i class="fa fa-chevron-right"></i>
+      <span class="sr-only">Next</span>
+    </a>
+
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#top-slider" data-slide-to="0" class="active"></li>
+      <li data-target="#top-slider" data-slide-to="1"></li>
+    </ol>
+
+  </div>
+</section>
