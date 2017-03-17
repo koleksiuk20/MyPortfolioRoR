@@ -3,10 +3,10 @@
 
 // General slider styles
 .top-slider {
+  @include relative;
   min-height: 500px;
   height: 100vh;
   z-index: 0;
-  @include relative;
   .container {
     position: absolute;
     top: 55%;
@@ -37,9 +37,9 @@
 
 .slide-image {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
   bottom: 0;
   z-index: 0;
   &:after {
@@ -78,16 +78,16 @@
 
 // Slider controllers
 .carousel-control {
-  @include basic-transition;
-  @include block;
-  outline: none;
   position: absolute;
   top: 55%;
+  margin: -35px 0  0;
+  @include block;
+  @include basic-transition;
+  outline: none;
   text-align: left;
-  background: none !important;
   @include center-text;
   @include size(88px, 78px);
-  margin: -35px 0  0;
+  background: none !important;
   &:hover {
     background: $brand-primary !important;
   }
@@ -112,8 +112,8 @@
     @include dark-overlay;
   }
   .item-content {
-    @include padding-top-bottom(80px, 80px);
     @include relative;
+    @include padding-top-bottom(80px, 80px);
     z-index: 1;
   }
 }

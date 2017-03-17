@@ -1,8 +1,8 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-@import "variables.scss";
 @import "mixins.scss";
+@import "variables.scss";
 
 // Main content
 #main-content {
@@ -28,18 +28,18 @@
 
 // Buttons
 .btn {
+  padding: 12px 20px;
   @include upper;
   font-weight: 700;
-  padding: 12px 20px;
   font-size: 14px;
   line-height: 1.4;
   &:focus {
     outline: none !important;
   }
   i {
-    @include icon($bright-text-color, 22px, 22px);
     margin-right: 10px;
     @include v-align;
+    @include icon($bright-text-color, 22px, 22px);
   }
   span {
     @include v-align;
@@ -58,9 +58,9 @@
 
 // Forms
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
+  border: 1px solid #bbb;
   @include box_sizing;
 }
 
@@ -86,9 +86,9 @@ input {
 #error_explanation {
   color: red;
   ul {
+    margin: 0 0 30px 0;
     list-style-type: none;
     color: red;
-    margin: 0 0 30px 0;
   }
 }
 
@@ -104,9 +104,9 @@ input {
   position: fixed;
   top: 60;
   right: 0;
-  border: 0;
   width: 120px;
   height: 120px;
+  border: 0;
   z-index: 998;
   opacity: 0.8;
   @include basic-transition;

@@ -36,9 +36,9 @@
     li, div {
       float: left;
       a {
-        font-weight: 700;
-        color: $menu-text-color;
         text-decoration: none;
+        color: $menu-text-color;
+        font-weight: 700;
         @include upper;
         @include basic-transition;
         &:hover {

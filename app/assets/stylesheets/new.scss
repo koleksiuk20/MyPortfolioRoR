@@ -1,5 +1,8 @@
+@import "mixins.scss";
+@import "variables.scss";
+
 .sign-up {
 	h1 {
-		text-align: center;
+		@include center-text;
 	}
 }
