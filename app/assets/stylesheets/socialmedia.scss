@@ -1,0 +1,48 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+// Contact social media
+.contact-icons {
+  @include center-text;
+}
+
+.contact-text {
+  margin-bottom: 30px;
+  @media screen and (min-width: 992px) {
+    margin-bottom: 50px;
+  }
+  p {
+    @include paragraph(16px);
+    @include center-text;
+  }
+}
+
+.contact-logos {
+  @include padding-top-bottom(30px, 30px);
+  background: $light-bg;
+}
+
+.logos-list {
+  @include list-style-none;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 70%;
+  @include flex-display;
+  @include flex-justify;
+  li {
+    @include inline-block;
+    line-height: 1.2;
+    a {
+      color: $dark-bg;
+      @include block;
+      opacity: 0.2;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 50px;
+      @include basic-transition;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}

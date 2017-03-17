@@ -24,6 +24,7 @@
 
       <%= render 'layouts/about' %>
       <%= render 'layouts/portfolio' %>
+      <%= render 'layouts/socialmedia' %>
 
       <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "flash-alert alert alert-#{message_type}") %>
@@ -31,6 +32,6 @@
 
 			<%= yield %>
 		</div>
-    
+
   </body>
 </html>

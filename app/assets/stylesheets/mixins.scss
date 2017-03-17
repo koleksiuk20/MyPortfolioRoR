@@ -13,8 +13,16 @@
   display: block;
 }
 
-@mixin relative {
-  position: relative;
+@mixin center-text {
+  text-align: center;
+}
+
+@mixin clear {
+  clear: both;
+}
+
+@mixin inline-block {
+  display: inline-block;
 }
 
 @mixin size($width, $height) {
@@ -22,8 +30,8 @@
   height: $height;
 }
 
-@mixin center-text {
-  text-align: center;
+@mixin relative {
+  position: relative;
 }
 
 @mixin v-align {
@@ -55,6 +63,17 @@
   text-transform: uppercase;
 }
 
+// Flexbox
+@mixin flex-display {
+  display: flex;
+  display: -ms-flexbox;
+}
+
+@mixin flex-justify {
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
 // Icons
 @mixin icon($color, $font-size, $line-height:$line-height-base) {
   color: $color;
@@ -72,6 +91,25 @@
 // Padding
 @mixin padding-top-bottom($p-top, $p-bottom) {
   padding: $p-top 0 $p-bottom;
+}
+
+// Paragraphs
+@mixin paragraph($font-size: $font-size-base, $line-height: $line-height-base, $color: $paragraph-color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $paragraph-color;
+}
+
+// Section Line
+@mixin section-line-mix {
+  background: $section-line-color;
+  content: "";
+  height: 2px;
+  margin-top: 10px;
+  width: 45%;
+  @media screen and (min-width: 768px) {
+    width: 48%;
+  }
 }
 
 // Shadow
