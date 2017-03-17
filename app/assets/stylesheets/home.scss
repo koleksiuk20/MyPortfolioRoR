@@ -1,6 +1,9 @@
 @import "mixins.scss";
 @import "variables.scss";
 
-.sign-up {
+.home-sign-up {
 	@include center-text;
+	.sign-up-button {
+		margin-bottom: 50px;
+	}
 }

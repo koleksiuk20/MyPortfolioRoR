@@ -1,8 +1,17 @@
 <% provide(:title, "Home") %>
 
-<section class="sign-up jumbotron">
-	<div class="container">
-		<h1>Sign up to see more details!</h1>
-		<%= link_to "Sign up now!", signup_path, class: "btn btn-primary" %>
-	</div>
+<section class="home-sign-up">
+  <div class="container">
+    <div class="row">
+    	<header class="section-title">
+				<h2>Join me today - it only takes a few seconds</h2>
+				<div class="section-line">
+          <span class="section-line-span"><i class="fa fa-sun-o"></i></span>
+        </div>
+      </header>
+      <div class="sign-up-button">
+      	<%= link_to "Sign up now!", signup_path, class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
 </section>
