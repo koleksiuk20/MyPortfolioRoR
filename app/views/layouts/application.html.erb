@@ -12,7 +12,7 @@
   	<%= render 'layouts/header' %>
     <%= render 'layouts/slider' %>
 		<div id="main-content">
-      <%= render 'layouts/main' %>
+      <%= render 'layouts/about' %>
       <% flash.each do |message_type, message| %>
         <%= content_tag(:div, message, class: "flash-alert alert alert-#{message_type}") %>
       <% end %>
