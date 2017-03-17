@@ -1,8 +1,15 @@
 <% provide(:title, "Sign up") %>
-<section class="sign-up jumbotron">
-	<div class="container">
-		<div class="col-md-6 col-md-offset-3">
-			<h1 >Sign up</h1>
+<section class="sign-up">
+  <div class="container">
+    <div class="row">
+    	<header class="section-title">
+				<h2 >Sign up</h2>
+				<div class="section-line">
+          <span class="section-line-span"><i class="fa fa-sun-o"></i></span>
+        </div>
+      </header>
+    </div>
+    <div class="sign-up-form">
 			<%= form_for(@user, url: signup_path) do |f| %>
 				<%= render 'shared/error_messages' %>
 

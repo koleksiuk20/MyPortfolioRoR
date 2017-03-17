@@ -2,7 +2,14 @@
 @import "variables.scss";
 
 .sign-up {
-	h1 {
-		@include center-text;
+	@include center-text;
+	label {
+		@include block;
+    width: 100%;
+    padding-right: 10px;
+    float: left;
+    color: #555554;
+    @include upper;
+    font-weight: bold;
 	}
 }
