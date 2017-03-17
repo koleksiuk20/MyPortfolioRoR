@@ -1,0 +1,21 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+footer {
+  background: $dark-bg;
+  color: $footer-text-color;
+}
+
+// Copyright
+.copyright {
+  background: $copyright-bg;
+  @include upper;
+  @include center-text;
+  font-size: 12px;
+}
+
+.copyright-content {
+  @include padding-top-bottom(20px, 0px);
+  padding-left: 25px;
+  padding-right: 25px;
+}
