@@ -126,9 +126,10 @@
 }
 
 // About section images
-@mixin icon-image($url) {
+@mixin icon-image($url, $left, $top) {
   background-image: $url;
   background-repeat: no-repeat;
+  background-position: $left $top;
 }
 
 // Slider Overlay
