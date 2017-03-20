@@ -5,7 +5,9 @@
 .top-slider {
   @include relative;
   min-height: 500px;
-  height: 100vh;
+  height: -o-calc(100vh - 60px);
+  height: -webkit-calc(100vh - 60px);
+  height: -moz-calc(100% - 60px);
   z-index: 0;
   .container {
     position: absolute;
@@ -102,7 +104,7 @@
 }
 
 .carousel-indicators {
-  bottom: 40px;
+  bottom: 60px;
 }
 
 // Mobile slider

@@ -2,6 +2,10 @@
 @import "variables.scss";
 
 .sign-up {
+	min-height: 550px;
+	height: -o-calc(100vh - 107px);
+	height: -webkit-calc(100vh - 107px);
+	height: -moz-calc(100% - 107px);
 	@include center-text;
 	label {
 		@include block;
