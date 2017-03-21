@@ -1,0 +1,22 @@
+<% provide(:title, "Edit user") %>
+<section class="sign-up">
+	<div class="container">
+		<div class="row">
+			<header class="section-title">
+				<h2>Edit</h2>
+				<div class="section-line">
+					<span class="section-line-span"><i class="fa fa-sun-o"></i></span>
+				</div>
+			</header>
+		</div>
+		<div class="edit-form">
+			
+			<%= render 'form' %>
+			<div class="gravatar_edit">
+				<%= gravatar_for @user %>
+				<a href="http://gravatar.com/emails" target="_blank">change</a>
+			</div>
+			<%= link_to "Back", root_path, class: 'btn btn-primary' %>
+		</div>
+	</div>
+</section>
